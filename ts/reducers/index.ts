@@ -1,3 +1,6 @@
-export function reducers(state: any = {}, action: any): any {
-    return state;
-}
+import {counter} from "./coutner";
+import {combineReducers} from "redux";
+
+export const reducers = combineReducers({
+    counter
+});
